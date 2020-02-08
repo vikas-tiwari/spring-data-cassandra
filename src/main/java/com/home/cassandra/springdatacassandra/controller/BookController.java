@@ -26,11 +26,11 @@ public class BookController {
 
     @PostConstruct
     public void saveBooks() {
-//        List<Book> books = new ArrayList<>();
-//        books.add(new Book("1", "Java", "James"));
-//        books.add(new Book("2", "C++" , "Chris"));
-//        books.add(new Book("3", "Python", "Austin"));
-//        bookrepo.saveAll(books);
+        List<Book> books = new ArrayList<>();
+        books.add(new Book("1", "Java", "James"));
+        books.add(new Book("2", "C++" , "Chris"));
+        books.add(new Book("3", "Python", "Austin"));
+        bookrepo.saveAll(books);
     }
 
     @GetMapping("/getAllBooks")
